@@ -1,6 +1,8 @@
-extends Node2D
+extends Node
 
-var world_size : Vector2 = Vector2(4, 4)
+@onready var tile_map = $TileMap
+
+var world_size : Vector2 = Vector2(6, 5)
 var rooms
 var taken_positions : Array[Vector2]
 var grid_size_x : int
@@ -159,9 +161,10 @@ func set_room_doors():
 func draw_map():
 	for col in range(grid_size_x * 2):
 		var s = ""
-		for raw in range(grid_size_y * 2):
-			if rooms[col][raw] == null:
+		for row in range(grid_size_y * 2):
+			if rooms[col][row] == null:
 				s += str(0)
 			else:
 				s += str(1)
 		print(s)
+	tile_map.make_a_map(rooms)

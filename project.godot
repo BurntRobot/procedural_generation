@@ -15,6 +15,11 @@ run/main_scene="res://Six Dot Dungeon Map/level_generator.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+
 [input]
 
 rebuild={
@@ -25,4 +30,4 @@ rebuild={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.803922, 0.85098, 0.831373, 1)
+environment/defaults/default_clear_color=Color(0.827451, 0.756863, 0.780392, 1)
