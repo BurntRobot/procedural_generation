@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://crokmyx0ruvbr"]
+
+[ext_resource type="Script" path="res://Six Dot Dungeon Map/level_generator.gd" id="1_pxmxx"]
+
+[node name="LevelGenerator" type="Node2D"]
+script = ExtResource("1_pxmxx")
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
